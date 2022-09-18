@@ -1,0 +1,51 @@
+/* index.css | Guage Schneider */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: white;
+  }
+
+
+
+  a {
+    background-color: transparent;
+  }
+
+  header {
+    background-color: purple;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .goon{
+    border-style: none;
+    grid-column: 3/4;
+    height: 100px;
+  }
+  .meeee{
+    grid-column: 4/6;
+  }
+
+  footer {
+      background-color: purple;
+  }
+
+  p {
+      text-align: center;
+      color: white;
+  }

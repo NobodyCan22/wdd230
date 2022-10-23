@@ -1,0 +1,54 @@
+/* index.css | Guage Schneider */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  h2 {
+    font-family: 'Trispace', sans-serif;
+  }
+
+  p {
+    font-family: 'Noto Serif Gujarati', serif;
+  }
+
+  a {
+    background-color: transparent;
+  }
+
+  header {
+    background-color: purple;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: white;
+  }
+
+  .logo{
+    border-style: none;
+    grid-column: 3/4;
+    height: 100px;
+  }
+  .title{
+    grid-column: 4/6;
+  }
+
+  footer {
+      background-color: purple;
+      color: white;
+  }

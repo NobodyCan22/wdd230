@@ -1,3 +1,39 @@
+@media only screen and (min-width: 32.5em) and (max-width: 64em) {
+  header {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 150px 128px 1fr 1fr;
+  }
+
+  .logo {
+      grid-column: 2/3;
+      align-items: right;
+  }
+
+  .title {
+      grid-column: 3/6;
+      align-items: left;
+  }
+
+header img {
+  width: 128px;
+}
+
+  .date {
+      grid-column: 6/8;
+  }
+
+.headings h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.m {
+  letter-spacing: 1.5pt;
+  font-size: 0.9rem;
+}
+
+
 header {
     background-color: purple;
     padding: 5px 0;
@@ -192,3 +228,4 @@ header {
     100% {
     }
   }
+}

@@ -11,7 +11,57 @@ html {
   }
 
   main {
-    display: block;
+    display: grid;
+    color: #E7B8F1;
+    grid-template-columns: 10% 80% 10%;
+    text-align: center;
+  }
+
+  main a {
+    color: #E7B8F1;
+  }
+
+
+  .welcome {
+    color: white;
+    background-image: url(../images/ccbg.jpeg);
+    grid-column: 2/3;
+  }
+
+  .announcement {
+    background-color: #6A0DAD;
+    grid-column: 2/3;
+
+  }
+
+  .weather {
+    background-color: #6A0DAD;
+    grid-column: 2/3;
+  }
+
+  .news {
+    background-color: #6A0DAD;
+    grid-column: 2/3;
+  }
+
+  .plugs {
+    background-color: #E7B8F1;
+    grid-column: 2/3;
+  }
+
+  .dpcollect {
+    background-color: #6A0DAD;
+    grid-column: 2/3;
+  }
+
+  .philly {
+    background-color: #6A0DAD;
+    grid-column: 2/3;
+  }
+
+  .philly img {
+    max-width: 150px;
+    height: auto;
   }
 
   h1 {

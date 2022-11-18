@@ -40,3 +40,23 @@ document.getElementById("date").innerHTML = fullDate;
       });
   
   })();
+
+
+const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://aerisweather1.p.rapidapi.com/sunmoon/clearfield,ut',
+  headers: {
+    'X-RapidAPI-Key': 'bbd2d4012dmshbd7bdf9a901bd93p1a4965jsn2f71386e7fac',
+    'X-RapidAPI-Host': 'aerisweather1.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then((response) => {
+  if(!response.ok) console.log(response.status + ' : ' + response.statusText);
+  response.json()
+	  document.getElementById("currentTemp").innerHTML = response.ob.tempF;
+    document.getElementById("windSpeed").innerHTML = response.ob.windSpeedMPH;
+    document.getElementById("windChill").innerHTML = 35.74 + (0.6215 * response.ob.tempF) - (35.75 * (response.ob.windSpeedMPH ** 0.06)) + (0.4275 * response.ob.tempF * (response.ob.windSpeedMPH ** 0.16));
+});

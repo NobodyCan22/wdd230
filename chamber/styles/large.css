@@ -89,7 +89,7 @@
   }
 
 
-  main {
+  .mainflex {
     display: grid;
     color: #E7B8F1;
     grid-template-columns: 10% 20% 40% 20% 10%;

@@ -349,6 +349,21 @@ html {
     display: none;
   }
 
+  .submitbtn {
+    color: #6A0DAD;
+  }
+
+  .tynothing {
+    display: block;
+    color: #6A0DAD;
+  }
+
+  .tynothing a {
+    text-decoration: wavy;
+  }
+
+  
+
 /* Larger viewports */
 @media only screen and (min-width: 32.5em) {
     header {

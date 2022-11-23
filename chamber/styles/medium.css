@@ -230,7 +230,7 @@
   }
 }
 
-main {
+.mainflex {
   display: grid;
   color: #E7B8F1;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;

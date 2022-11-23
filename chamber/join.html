@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles/base.css" />
+        <link rel="stylesheet" href="./styles/medium.css" />
+        <link rel="stylesheet" href="./styles/large.css" />
+
+
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati&display=swap" rel="stylesheet">
+
+
+        <title>Clearfield City Chamber</title>
+
+        <meta name="description" content="Home page of CCC">
+    </head>
+
+    <body>
+
+        <header>
+            <section class="wrapper">
+
+                <section class="material-design-hamburger">
+                  <button class="material-design-hamburger__icon">
+                    <span class="material-design-hamburger__layer"></span>
+                  </button>
+                </section>
+              
+                <section class="menu menu--off">
+                  <div><a href="../index.html">WDD230 Main</a></div>
+                  <div><a href="index.html">Home</a></div>
+                  <div><a href="../discover/discover.html">Discover</a></div>
+                  <div><a href="join.html">Join Us!</a></div>
+                  <div><a href="https://www.instagram.com/nobodycan22/" target="_blank">Instagram</a></div>
+                  <div><a href="https://twitter.com/thisisguage" target="_blank">Twitter</a></div>
+                  <div><a href="https://www.linkedin.com/in/guage-schneider-612784179/" target="_blank">LinkedIn</a></div>
+                  <div><a href="https://www.tiktok.com/@thisisguage?lang=en" target="_blank">TikTok (Follow?)</a></div>
+                  
+                </section>
+
+                <section class="list">
+                    <div><a href="../index.html">WDD230 Main</a></div>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="../discover/discover.html">Discover</a></div>
+                    <div><a href="join.html">Join Us!</a></div>
+                </section>
+                
+            </section>
+
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <h1 class="title">Clearfield City Chamber</h1>
+
+            <p class="date">Date: <span id="date"></span></p>
+
+            <section class="socials">
+                <div><a href="https://www.instagram.com/nobodycan22/" target="_blank"><img class="insta" src="./images/insta.png" alt="insta"></a></div>
+                <div><a href="https://twitter.com/thisisguage" target="_blank"><img class="tweet" src="./images/tweet.png" alt="tweeter"></a></div>
+                <div><a href="https://www.linkedin.com/in/guage-schneider-612784179/" target="_blank" ><img class="lin" src="./images/lin.png" alt="linkedin"></a></div>
+                <div><a href="https://www.tiktok.com/@thisisguage?lang=en" target="_blank" ><img class="tt" src="./images/tt.png" alt="tiktok"></a></div>
+            </section>
+
+        </header>
+
+        <main class="joinmain">
+            <div id="feedback"></div>
+            <form class="form" action="/join-us-page" method="post">
+              <ul>
+                <li>
+                  <label class="fname" for="fname">First Name: </label>
+                  <input class="fnamebox" type="text" id="fname" name="first_name" required/>
+                </li>
+                <li>
+                    <label class="lname" for="lname">Last Name: </label>
+                    <input class="lnamebox" type="text" id="lname" name="last_name" required/>
+                </li>
+                <li>
+                    <label class="bustitle" for="btitle">Title: </label>
+                    <input class="titlebox" type="text" id="bustitle" name="business-title" />
+                </li>
+                <li>
+                  <label class="email" for="mail">E-mail: </label>
+                  <input class="emailbox" type="email" id="mail" name="user_email" placeholder="ushouldkno@how2dothis.com" required/>
+                </li>
+                <li>
+                    <label class="phone" for="phone">Cell Number: </label>
+                    <input class="phonebox" type="tel" id="phone" name="phone" required/>
+                </li>
+                <li>
+                    <label class="bname" for="bname">Business Name: </label>
+                    <input class="bnamebox" type="text" id="bname" name="business_name" required/>
+                </li>
+                <li>
+                    <div class="member">
+                        <p>Membership Type: </p>
+                        <input type="radio" id="np" name="member" value="Non-Profit">
+                        <label for="np">
+                            Non-Profit
+                        </label>
+                        <div class="np-info">
+                            <div class="col-md-12">
+                                <div class="info">
+                                    <i class="icon-info-sign"></i>
+                                
+                                    <span class="extra-info">
+                                        For Non-Profit organizations only - no charge
+                                    </span>
+                                </div><br />   
+                            </div>
+                        </div><br>
+                        
+                        <input type="radio" id="bronze" name="member" value="Bronze">
+                        <label for="bronze">
+                            Bronze
+                        </label>
+                        <div class="br-info">
+                            <div class="col-md-12">
+                                <div class="info">
+                                    <i class="icon-info-sign"></i>
+                                
+                                    <span class="extra-info">
+                                        $10/month - Events early-access, select discounts/coupons
+                                    </span>
+                                </div><br />   
+                            </div>
+                        </div><br>
+
+                        <input type="radio" id="silver" name="member" value="Silver">
+                        <label for="silver">
+                            Silver
+                        </label>
+                                                    <div class="si-info">
+                                <div class="col-md-12">
+                                    <div class="info">
+                                        <i class="icon-info-sign"></i>
+                                    
+                                        <span class="extra-info">
+                                            $15/month - Bronze benefits PLUS discounted advertising and extra discounts/coupons
+                                        </span>
+                                    </div><br />   
+                                </div>
+                            </div><br>
+                        <input type="radio" id="gold" name="member" value="Gold">
+                        <label for="gold">
+                            Gold
+                        </label>
+                        <div class="go-info">
+                            <div class="col-md-12">
+                                <div class="info">
+                                    <i class="icon-info-sign"></i>
+                                
+                                    <span class="extra-info">
+                                        $20/month - Silver benefits PLUS premium discounts/coupons, free trainings, spotlight advertising and MORE!
+                                    </span>
+                                </div><br />   
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <label class="message" for="msg">Business Description: </label><br>
+                  <textarea class="emailbox" id="msg" name="user_message"></textarea>
+                </li>
+              </ul>
+              <button type="submit">
+                Submit
+              </button>
+            </form>
+
+
+        </main>
+
+        
+        <footer>
+            <img src="./images/logo.png" alt="logo" class="logolower">
+            <p class="foot-text"> &copy; <span id="year"></span> Clearfield City Chamber | <a href="https://www.google.com/maps/place/Clearfield,+UT/@41.0999994,-112.0215348,13z/data=!3m1!4b1!4m5!3m4!1s0x8752fdb39c6fbeab:0x2b465ddb0dc00f93!8m2!3d41.1107771!4d-112.0260538">MAP</a>| D. Guage Schneider | WDD230 Project | <a href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+            <p class="update">Last Updated: <span id="update"></span></p>
+        </footer>
+        
+        <script src="scripts/main.js"></script>
+
+    </body>
+
+</html>

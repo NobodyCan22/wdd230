@@ -10,8 +10,9 @@ html {
     margin: 0;
   }
 
-  main {
+  .mainflex {
     display: grid;
+    background-color: #E7B8F1;
     color: #E7B8F1;
     grid-template-columns: 10% 80% 10%;
     text-align: center;
@@ -21,6 +22,10 @@ html {
     color: #E7B8F1;
   }
 
+  .joinmain {
+    color:#6A0DAD;
+    background-color: #E7B8F1;
+  }
 
   .welcome {
     color: white;
@@ -318,7 +323,31 @@ html {
     height: 80px;
     display: inline-block;
   }
+  
 
+  .member {
+    text-align: left;
+  }
+
+  .form {
+    text-align: left;
+  }
+
+  .np-info {
+    display: none;
+  }
+
+  .br-info {
+    display: none;
+  }
+
+  .si-info {
+    display: none;
+  }
+
+  .go-info {
+    display: none;
+  }
 
 /* Larger viewports */
 @media only screen and (min-width: 32.5em) {
@@ -356,4 +385,3 @@ html {
 		font-size: 0.9rem;
 	}
 }
-

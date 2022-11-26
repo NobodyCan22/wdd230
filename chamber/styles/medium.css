@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) and (max-width: 64em) {
+@media only screen and (min-width: 34em) and (max-width: 64em) {
   header {
       max-width: 100%;
       display: grid;
@@ -50,9 +50,6 @@
     font-size: 4em;
   }
 
-  main {
-    max-width: 100%;
-  }
 
   .dirmenu {
     display: block;
@@ -247,7 +244,7 @@
 .mainflex {
   display: grid;
   color: #E7B8F1;
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-columns: 5% 25% 20% 20% 25% 5%;
   grid-template-rows: repeat(1fr, 5);
   text-align: center;
   column-gap: 4px;
@@ -281,27 +278,24 @@
 
 .plugs {
   background-color: #E7B8F1;
-  grid-column: 2/6;
-  grid-row: 3/4;
+  grid-column: 5/6;
+  grid-row: 1/6;
+}
+
+.plugttl {
+  background-color: #6A0DAD;
+  grid-row: 1/2;
 }
 
 .dpcollect {
   background-color: #6A0DAD;
-  grid-column: 1/3;
+  grid-row: 2/5;
   display:inline-block;
 }
 
-.philly {
-  margin-top: 0%;
+.pluglink {
   background-color: #6A0DAD;
-  grid-column: 3/6;
-  display: inline-block;
-  height: 100%;
-}
-
-.philly img {
-  max-width: 150px;
-  height: auto;
+  grid-row: 5/6;
 }
 
 .join {

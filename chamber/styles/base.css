@@ -115,7 +115,7 @@ html {
     background-color: #E7B8F1;
     color: #E7B8F1;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: auto;
+    grid-template-rows: repeat(1fr, 7);
     text-align: center;
   }
 

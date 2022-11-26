@@ -148,28 +148,30 @@
     grid-row: 3/4;
   }
   
+  
   .plugs {
     background-color: #E7B8F1;
-    grid-column: 4/5;
-    grid-row: 1/3;
+    grid-column: 4/6;
+    grid-row: 1/6;
+    row-gap: 4px;
+  }
+  
+  .plugttl {
+    background-color: #6A0DAD;
+    grid-row: 1/2;
+    display: inline-block;
   }
   
   .dpcollect {
     background-color: #6A0DAD;
-    grid-row: 1/2;
+    grid-row: 2/5;
     display:inline-block;
   }
   
-  .philly {
-    margin-top: 0%;
+  .pluglink {
     background-color: #6A0DAD;
-    grid-row: 2/3;
+    grid-row: 5/6;
     display: inline-block;
-  }
-  
-  .philly img {
-    max-width: 150px;
-    height: auto;
   }
   
   .join {

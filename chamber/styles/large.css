@@ -50,6 +50,28 @@
       font-size: 4em;
     }
 
+    h1 {
+      font-size: 3em;
+      color: white;
+    }
+
+    .dirttl {
+      text-align: center;
+    }
+
+    main {
+      max-width: 100%;
+    }
+
+    .dirmenu {
+      display: block;
+      margin: 1rem auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.5rem;
+      background-color: #E7B8F1;
+      text-align: center;
+    }
+
     .menu--off {
       display: none;
     }
@@ -81,6 +103,7 @@
 
     .socials {
         display: inline;
+        background-color: purple;
     }
     
     .socials div {

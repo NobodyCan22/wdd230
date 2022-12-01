@@ -1,4 +1,4 @@
-@media only screen and (min-width: 34em) and (max-width: 64em) {
+@media only screen and (min-width: 34em) and (max-width: 100em) {
   header {
       max-width: 100%;
       display: grid;
@@ -10,6 +10,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #6A0DAD;
+    max-width: 99em;
   }
 
   .logo {
@@ -48,7 +49,7 @@
     color: white;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 99em;
     margin: 0 auto;
     border-bottom: 1px solid black;
   }

@@ -111,67 +111,31 @@ html {
   }
 
   .mainflex {
-    display: grid;
-    background-color: #E7B8F1;
-    color: #E7B8F1;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(1fr, 7);
-    text-align: center;
+    display: none;
   }
 
   main a {
     color: #E7B8F1;
   }
 
-  .joinmain {
-    color:#6A0DAD;
-    background-color: #E7B8F1;
+  .areasm {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+  }
+  
+  .areasm section {
+    flex-direction: column;
+    text-align: center;
+    grid-column: 2/3;
+  }
+  
+  .areasm section > * {
+    margin: 0.1rem;
   }
 
-  .welcome {
-    color: white;
+  .welcomesm {
     background-image: url(../images/ccbg.jpeg);
-    grid-row: 1/2;
-  }
-
-  .announcement {
-    background-color: #6A0DAD;
-    grid-row: 2/3;
-
-  }
-
-  .weather {
-    background-color: #6A0DAD;
-    grid-row: 3/4;
-  }
-
-  .news {
-    background-color: #6A0DAD;
-    grid-row: 4/5;
-  }
-
-  .plugs {
-    background-color: #E7B8F1;
-    grid-row: 5/8;
-  }
-
-  .plugttl {
-    background-color: #6A0DAD;
-    grid-row: 5/6;
-  }
-
-  .dpcollect {
-    background-color: #6A0DAD;
-    grid-row: 6/7;
-  }
-
-  .pluglink {
-    background-color: #6A0DAD;
-    grid-row: 7/8;
-  }
-
-  .join {
-    display: none;
   }
 
   h1 {

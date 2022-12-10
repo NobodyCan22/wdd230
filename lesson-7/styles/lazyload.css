@@ -1,0 +1,62 @@
+
+div {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#bg-img1.lazy {
+    background-image: none;
+    background-color: #660359;
+}
+#bg-img1 {
+    background-image: url("../images/random1.jpg");
+    background-size: 100% 100%;
+}
+
+#bg-img2.lazy {
+    background-image: none;
+    background-color: #8a8705;
+}
+#bg-img2 {
+   background-image: url("../images/random2.png");
+   background-size: 100% 100%;
+}
+
+#bg-img3.lazy {
+    background-image: none;
+    background-color: #1dc5c5;
+}
+#bg-img3 {
+   background-image: url("../images/random3.jpg");
+   background-size: 100% 100%;
+}
+
+#bg-img4.lazy {
+    background-image: none;
+    background-color: #7e0e0e;
+}
+#bg-img4 {
+   background-image: url("../images/random4.jpg");
+   background-size: 100% 100%;
+}
+
+#bg-img5.lazy {
+    background-image: none;
+    background-color: #a8a609;
+}
+#bg-img5 {
+   background-image: url("../images/random5.jpg");
+   background-size: 100% 100%;
+}
+
+#bg-img6.lazy {
+    background-image: none;
+    background-color: #25be3a;
+}
+#bg-img6 {
+   background-image: url("../images/random6.jpg");
+   background-size: 100% 100%;
+}

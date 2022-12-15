@@ -1,184 +1,61 @@
-/* index.css | Guage Schneider */
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: #E7B8F1;
-    max-height: auto;
+@media only screen and (min-width: 34em) and (max-width: 100em) {
+  header {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 150px 128px 1fr 1fr;
   }
 
   main {
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    max-width: 700px;
-    background-color: #6A0DAD;
+    background-color: #ff002b;
+    max-width: 99em;
   }
 
-  .dirmenu {
-    display: none;
+  .logo {
+      grid-column: 2/3;
+      align-items: right;
   }
 
-  .dirmenu button {
-    padding: 1rem;
-    font-weight: 700;
+  .title {
+      grid-column: 3/6;
+      align-items: left;
   }
 
-  article,
-  section {
-	  margin: 0.5rem;
+  header img {
+    width: 128px;
   }
 
-  main section {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: #E7B8F1;
+  .date {
+      grid-column: 6/8;
   }
-  
-  .dirmain a {
-    color: #6A0DAD;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items: center;
-  }
-  
-  .grid section {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .grid section > * {
-    margin: 0.1rem;
-  }
-  
-  .grid h3 {
-    font-family: "Caveat", cursive;
-  }
-  
-  .dirlist {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dirlist section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
-  }
-  
-  .dirlist section > * {
-    margin: 0 1rem;
-  }
-  
-  .dirlist section img {
-    display: none; /* smaller viewports only */
-  }
-  
-  .dirlist section h3 {
+
+  .headings h1 {
     font-size: 1rem;
-  }
-  
-  .diirlist section:nth-child(even) {
-    background-color: #E7B8F1;
+    margin: 0;
   }
 
-  .dirlist section:nth-child(odd) {
-    background-color: white;
-  }
-  
-  section h3 {
-    font-size: 1.5rem;
-  }
-  
-  img {
-    height: 75px;
-    max-width: 100%; 
+  .m {
+    letter-spacing: 1.5pt;
+    font-size: 0.9rem;
   }
 
-  .mainflex {
-    display: none;
-  }
-
-  main a {
-    color: #E7B8F1;
-  }
-
-  .areasm {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    align-items: center;
-  }
-  
-  .areasm section {
-    flex-direction: column;
-    text-align: center;
-    grid-column: 2/3;
-  }
-  
-  .areasm section > * {
-    margin: 0.1rem;
-  }
-
-  .welcomesm {
-    background-image: url(../images/ccbg.jpeg);
-  }
-
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-    font-family: 'Bebas Neue', cursive;
-  }
-
-  h2 {
-    font-family: 'Trispace', sans-serif;
-  }
-
-  p {
-    font-family: 'Noto Serif Gujarati', serif;
-    font-size: 1em;
-  }
-
-  a {
-    background-color: transparent;
-  }
 
   header {
-    background-color: purple;
+    background-color: #00a716;
     padding: 5px 0;
     display: flex;
-    color: white;
+    color: #2f2f2f;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 99em;
     margin: 0 auto;
     border-bottom: 1px solid black;
   }
 
   header h1 {
-    font-size: 2em;
-  }
-
-  .list {
-    display: none;
-  }
-
-  .socials {
-    display: none;
+    font-size: 4em;
   }
   
   .wrapper {
@@ -186,28 +63,28 @@ html {
     transition: all 300ms ease-in-out;  
     margin: 1em 0;
     padding: 0;
-    background-color: purple;
+    background-color: #00a716;
   }
   
   .background--blur {
-    background: #6A0DAD;
+    background: #99ffa6;
   }
   
   .menu {
     font-size:2em;
     font-family: 'Bebas Neue', cursive;
-    color: #333;
+    color: #2f2f2f;
   }
   
   .menu div {
     margin: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #2f2f2f;
   }
   
   .menu a {
     text-decoration: none;
-    color: white;
+    color: #2f2f2f;
   }
   
   .menu a:hover {
@@ -223,9 +100,9 @@ html {
     left: -50%;
     width: 50%;
     display: block;
-    background: #8F0096;
-    min-height: 100px;
-    height: 100%;
+    background: #99ffa6;
+    min-height: 600px;
+    height: 125%;
     margin-top: 1em;
     transition: all 300ms;
   }
@@ -250,9 +127,9 @@ html {
   
   .material-design-hamburger__layer {
     display: block;
-    width: 50px;
+    width: 100px;
     height: 10px;
-    background: #eee;
+    background: #2f2f2f;
     position: relative;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
@@ -360,70 +237,60 @@ html {
     100% {
     }
   }
+
+  .welcome {
+    color: #99ffa6;
+    background-image: url(../images/sb.jpg);
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+  }
+
+  .mainflex {
+    display: grid;
+    background-color: #ffa0a0;
+    color: #ffa0a0;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: repeat(1fr, 5);
+    text-align: center;
+    column-gap: 4px;
+    row-gap: 4px;
+    min-width: 700px;
+  }
+
+  .contact_us {
+    background-color: #ff002b;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 100%;
+  }
   
-
-  a {
-    color: white;
+  .weather {
+    background-color: #ff002b;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-items: center;
+  }
+  
+  .news {
+    background-color: #ff002b;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
 
-  .logo{
-    width: 80px;
-    height: 80px;
-    display: inline-block;
+  .fresh {
+    background-color: #ff002b;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 
-  .logo img {
-    width: 80px;
-    height: 80px;
-    display: inline-block;
+  .areasm {
+    display: none;
   }
 
   footer {
-      background-color: purple;
-      color: white;
-      text-align: center;
+    background-color: #00a716;
+    color: #2f2f2f;
+    text-align: center;
   }
-
-  .logolower {
-    width: 80px;
-    height: 80px;
-    display: inline-block;
-  }
-  
-
-  .member {
-    text-align: left;
-  }
-
-  .form {
-    text-align: left;
-  }
-
-  .np-info {
-    display: none;
-  }
-
-  .br-info {
-    display: none;
-  }
-
-  .si-info {
-    display: none;
-  }
-
-  .go-info {
-    display: none;
-  }
-
-  .submitbtn {
-    color: #6A0DAD;
-  }
-
-  .tynothing {
-    display: block;
-    color: #6A0DAD;
-  }
-
-  .tynothing a {
-    text-decoration: wavy;
-  }
+}

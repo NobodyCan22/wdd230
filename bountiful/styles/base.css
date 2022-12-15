@@ -1,71 +1,155 @@
-@media only screen and (min-width: 34em) and (max-width: 100em) {
-  header {
-      max-width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 150px 128px 1fr 1fr;
+/* index.css | Guage Schneider */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffa0a0;
+    max-height: auto;
   }
 
   main {
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #6A0DAD;
-    max-width: 99em;
+    max-width: 700px;
+    background-color: #ff002b;
   }
 
-  .logo {
-      grid-column: 2/3;
-      align-items: right;
+  article,
+  section {
+	  margin: 0.5rem;
   }
 
-  .title {
-      grid-column: 3/6;
-      align-items: left;
+  main section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #ffa0a0;
+  }
+  
+  section h3 {
+    font-size: 1.5rem;
+  }
+  
+  img {
+    height: 75px;
+    max-width: 100%; 
   }
 
-  header img {
-    width: 128px;
+  .aboutmain {
+    text-align: center;
   }
 
-  .date {
-      grid-column: 6/8;
+  .owner {
+    background-color: #ffa0a0;
+    color: #ff002b;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .headings h1 {
-    font-size: 1rem;
-    margin: 0;
+  .owner img {
+    max-width: 650px;
+    height: auto;
   }
 
-  .m {
-    letter-spacing: 1.5pt;
-    font-size: 0.9rem;
+  .manager {
+    background-color: #ffa0a0;
+    color: #ff002b;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  .contactmain {
+    text-align: center;
+    color: #ffa0a0;
+  }
+
+  .manager img {
+    max-width: 650px;
+    height: auto;
+  }
+
+  .mainflex {
+    display: none;
+  }
+
+  main a {
+    color: #ffa0a0;
+  }
+
+  .areasm {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+  }
+  
+  .areasm section {
+    flex-direction: column;
+    text-align: center;
+    grid-column: 2/3;
+  }
+  
+  .areasm section > * {
+    margin: 0.1rem;
+  }
+
+  .welcomesm {
+    background-image: url(../images/ccbg.jpeg);
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  h2 {
+    font-family: 'Trispace', sans-serif;
+  }
+
+  p {
+    font-family: 'Noto Serif Gujarati', serif;
+    font-size: 1em;
+  }
+
+  a {
+    background-color: transparent;
+  }
 
   header {
-    background-color: purple;
+    background-color: #00a716;
     padding: 5px 0;
     display: flex;
-    color: white;
+    color: #2f2f2f;
     align-items: center;
     justify-content: space-between;
-    max-width: 99em;
+    max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid black;
   }
 
   header h1 {
-    font-size: 4em;
+    font-size: 2em;
   }
 
+  .list {
+    display: none;
+  }
 
-  .dirmenu {
-    display: block;
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: #E7B8F1;
-    text-align: center;
+  .socials {
+    display: none;
   }
   
   .wrapper {
@@ -73,28 +157,28 @@
     transition: all 300ms ease-in-out;  
     margin: 1em 0;
     padding: 0;
-    background-color: purple;
+    background-color: #00a716;
   }
   
   .background--blur {
-    background: #6A0DAD;
+    background: #99ffa6;
   }
   
   .menu {
     font-size:2em;
     font-family: 'Bebas Neue', cursive;
-    color: #333;
+    color: #2f2f2f;
   }
   
   .menu div {
     margin: 1em;
     padding-bottom: 1em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #2f2f2f;
   }
   
   .menu a {
     text-decoration: none;
-    color: white;
+    color: #2f2f2f;
   }
   
   .menu a:hover {
@@ -110,9 +194,9 @@
     left: -50%;
     width: 50%;
     display: block;
-    background: #8F0096;
-    min-height: 600px;
-    height: 125%;
+    background: #99ffa6;
+    min-height: 100px;
+    height: 100%;
     margin-top: 1em;
     transition: all 300ms;
   }
@@ -137,9 +221,9 @@
   
   .material-design-hamburger__layer {
     display: block;
-    width: 100px;
+    width: 50px;
     height: 10px;
-    background: #eee;
+    background: #2f2f2f;
     position: relative;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
@@ -247,148 +331,38 @@
     100% {
     }
   }
+  
 
-
-  .mainflex {
-    display: grid;
-    background-color: #E7B8F1;
-    color: #E7B8F1;
-    grid-template-columns: 5% 25% 20% 20% 25% 5%;
-    grid-template-rows: repeat(1fr, 5);
-    text-align: center;
-    column-gap: 4px;
-    row-gap: 4px;
-    min-width: 700px;
+  a {
+    color: #2f2f2f;
   }
 
-  .welcome {
-    color: white;
-    background-image: url(../images/ccbg.jpeg);
-    background-size: cover;
-    grid-column: 3/4;
-    grid-row: 1/3;
-  }
-
-  .announcement {
-    background-color: #6A0DAD;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    height: 100%;
-  }
-
-  .weather {
-    background-color: #6A0DAD;
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .news {
-    background-color: #6A0DAD;
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-
-
-  .plugs {
-    background-color: #6A0DAD;
-    grid-column: 4/6;
-    grid-row: 1/4;
-    row-gap: 4px;
-  }
-
-  .plugttl {
-    background-color: #6A0DAD;
-    grid-row: 1/2;
+  .logo{
+    width: 80px;
+    height: 80px;
     display: inline-block;
   }
 
-  .dpcollect {
-    background-color: #6A0DAD;
-    grid-row: 2/5;
-    display:inline-block;
-  }
-
-  .pluglink {
-    background-color: #6A0DAD;
-    grid-row: 5/6;
+  .logo img {
+    width: 80px;
+    height: 80px;
     display: inline-block;
   }
 
-  .join {
-    background-color: #6A0DAD;
-    display: block;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    height: 100%;
+  footer {
+      background-color: #00a716;
+      color: #2f2f2f;
+      text-align: center;
   }
 
-  .join button {
-    height: 150px;
-    width: 150px;
-    background-color: #E7B8F1;
+  footer a {
+    color: #99ffa6;
   }
 
-  .join a {
-    color: #6A0DAD;
-    text-decoration: wavy;
+  .logolower {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
   }
   
-  .join h1 {
-    color: #6A0DAD;
-    text-decoration: wavy;
-    font-size: 50px;
-  }
 
-  .areasm {
-    display: none;
-  }
-
-  * {
-    transition: all .2s ease;
-  }
-
-  .extra-info {
-    display: none;
-    line-height: 30px;
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 50px;
-  }
-
-  .info:hover .extra-info {
-    display: block;
-  }
-
-  .info {
-    display: block;
-    font-size: 20px;
-    padding-left: 5px;
-    width: 20px;
-    border-radius: 15px;
-  }
-
-  .info:hover {
-    background-color: white;
-    padding: 0 0 0 5px;
-    width: auto;
-    height:100px;
-    text-align: left !important;
-  }
-
-  .np-info {
-    display: block;
-  }
-
-  .br-info {
-    display: block;
-  }
-
-  .si-info {
-    display: block;
-  }
-
-  .go-info {
-    display: block;
-  }
-}

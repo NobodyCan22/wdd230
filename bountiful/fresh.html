@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <title>Bountiful Foods - Fresh</title>
+
+    <meta name="description" content="Fresh page" />
+  </head>
+
+  <body>
+    <header>
+      <p class="date">Date: <span id="date"></span></p>
+
+      <a href="./index.html"
+        ><img src="./images/logo.png" alt="logo" class="logo"
+      /></a>
+      <h1 class="title">Bountiful Foods</h1>
+
+      <section class="wrapper">
+        <section class="material-design-hamburger">
+          <button class="material-design-hamburger__icon">
+            <span class="material-design-hamburger__layer"></span>
+          </button>
+        </section>
+
+        <section class="menu menu--off">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="fresh.html">Fresh</a></div>
+          <div><a href="about.html">About Us</a></div>
+          <div><a href="contact.html">Contact Us</a></div>
+          <div>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/nobodycan22/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+          <div>
+            <a href="https://www.twitter.com">Twitter</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="list">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="fresh.html">Fresh</a></div>
+        <div><a href="about.html">About Us</a></div>
+        <div><a href="contact.html">Contact Us</a></div>
+      </section>
+    </header>
+
+    <main>
+      <h1>Let's get fresh!</h1>
+
+      <div id="feedback"></div>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="user_name" required/>
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" required/>
+          </li>
+          <li>
+            <label for="msg">Any Special Instructions:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li>
+            <p>
+                <input type="button" 
+                    style="margin:10px 0;" 
+                        onclick="populateSelect()" 
+                            value="Looking for some extra fruit?" />
+            </p>
+            <select id="sel1" onchange="show(this)" name="fruit1">
+                <option value="">-- Select --</option>
+            </select>
+          </li>
+          <li>
+            <select id="sel2" onchange="show(this)" name="fruit2">
+                <option value="">-- Select --</option>
+            </select>
+          </li>
+          <li>
+            <select id="sel3" onchange="show(this)" name="fruit3">
+                <option value="">-- Select --</option>
+            </select>
+          </li>
+          <li></li>
+          <li class="button">
+            <button type="submit">Submit the order!</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <footer>
+      <p class="foot-text">
+        &copy; <span id="year"></span> | D. Guage Schneider | Utah |
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p>
+      <p class="update">Last Updated: <span id="update"></span></p>
+
+      <section class="socials">
+        <div>
+          <a href="https://www.facebook.com" target="_blank"
+            ><img class="fb" src="./images/fb.png" alt="facebook"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/nobodycan22/" target="_blank"
+            ><img class="insta" src="./images/insta.png" alt="insta"
+          /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/thisisguage" target="_blank"
+            ><img class="tweet" src="./images/tweet.png" alt="tweeter"
+          /></a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

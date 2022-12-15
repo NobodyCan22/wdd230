@@ -365,4 +365,11 @@ html {
     display: inline-block;
   }
   
+  .lostmain {
+    text-align: center;
+  }
 
+  .lostmain img {
+    max-width: 700px;
+    height: auto;
+  }
